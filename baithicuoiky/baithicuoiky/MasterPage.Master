@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="baithicuoiky.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="Css/baithicuoiky.css" rel="stylesheet" />
+</head>
+<body>
+          <form id="form1" runat="server">
+             <table>
+            <tr class="row-1">              
+       <td colspan="2" >  
+           <img src="image/logo%20-%20CĐ%20CÔNG%20THƯƠNG.png" />
+                        <div class="truong">                    
+                             <p> Trường Cao Đẳng <br />
+                             Công Thương Việt Nam</p>
+                         <p style="color:red">"Đào tạo những gì doanh nghiệp cần"</p>
+                       </div>                                  
+                 </td>
+            </tr>
+            <tr class="row-2">
+                <td class="row-2-col-1">      
+                     <div>
+     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Dangkythongtin.aspx">Đăng ký thông tin</asp:HyperLink>
+ </div>
+                     <div>
+     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Capnhattruonghoc.aspx">Cập nhật trường học</asp:HyperLink>
+ </div>
+                  
+                </td>
+                <td class="row-2-col-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr class="row-3">
+                <td colspan="3">
+                    <div class="footer">
+                           <a>Họ và tên sinh viên: Đàm Phát Toàn    </a> 
+                           <a>MSSV:2104CQ270115</a>
+                           <a>Lớp:CCN04.6B</a>  <br />
+                           <a>Đề thi:1</a>
+                           <a>Số báo danh:CCN6B18</a>
+                    </div>
+                 
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>
